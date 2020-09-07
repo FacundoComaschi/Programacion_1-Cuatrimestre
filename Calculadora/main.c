@@ -5,14 +5,18 @@
 
 #include <stdio.h>
 #include "funciones.h"
+
 int main()
 {
 	int opciones;
     int a;
     int b;
 
+//ingreso(a,b);
+
 	 do{
-        printf("1. Ingresar primer numero \n2. Ingresar segundo numero \n3. Realizar suma \n4. Realizar resta \n5. Realizar multiplicacion \n6. Realizar division \n7. Realizar factorial \n8. Salir \n");
+
+        printf("1. Primer numero ingresado  \n2. Segundo numero ingresado  \n3. Realizar suma \n4. Realizar resta \n5. Realizar multiplicacion \n6. Realizar division \n7. Realizar factorial \n8. Salir \n");
         printf("Seleccione una opcion: ");
         scanf("%d",&opciones);
 
@@ -24,18 +28,36 @@ int main()
         printf("Ingrese primer numero: \n");
         scanf("%d",&a);
         break;
+
         case 2:
         printf("Ingrese segundo numero: \n");
         scanf("%d",&b);
         break;
-		case 3: sumar(a,b);
+
+		case 3:
+        sumar(a,b);
 		break;
-		case 4: restar(a,b);
+
+		case 4:
+        restar(a,b);
 		break;
-		case 5: multiplicar(a,b);
+
+		case 5:
+        multiplicar(a,b);
 		break;
-		case 6: dividir(a,b);
+
+		case 6:
+        if ((a!=0) & (b!=0))
+            {
+             dividir(a,b);
+            }else (printf("Es imposible dividir por 0\n "));
+
 		break;
+
+		case 7:
+        factorial(a,b);
+        break;
+
         case 8:
         printf("El programa finalizo ");
         break;
