@@ -1,100 +1,71 @@
-//void sumar(int a, int b);
-//void restar(int a, int b);
-//void multiplicar(int a, int b);
-//void dividir(int a, int b);
-
 #include <stdio.h>
 #include "funciones.h"
-
+#include <stdlib.h>
 int main()
 {
 	int opciones;
-    int a;
-    int b;
-
-//ingreso(a,b);
+    float a;
+    float b;
 
 	 do{
 
-        printf("1. Primer numero ingresado  \n2. Segundo numero ingresado  \n3. Realizar suma \n4. Realizar resta \n5. Realizar multiplicacion \n6. Realizar division \n7. Realizar factorial \n8. Salir \n");
-        printf("Seleccione una opcion: ");
+        printf("-----------------------------------------\n");
+        printf("|1.Ingrese primer numero (A=%.2f)       |\n",a);
+        printf("|2.Ingrese segundo numero (B=%.2f)      |\n",b);
+        printf("|3.Mostrar calculos                     |\n");
+        printf("|4.Mostrar resultados                   |\n");
+        printf("|5.Salir                                |\n");
+        printf("|       Seleccione una opcion           |\n");
+        printf("-----------------------------------------\n");
         scanf("%d",&opciones);
-
+        system("cls");
 
 
 	switch (opciones)
 	{
 		case 1:
-        printf("Ingrese primer numero: \n");
-        scanf("%d",&a);
+        printf("Ingrese primer numero: \n",a);
+        scanf("%f",&a);
         break;
 
         case 2:
         printf("Ingrese segundo numero: \n");
-        scanf("%d",&b);
+        scanf("%f",&b);
         break;
 
 		case 3:
-        sumar(a,b);
+        if (a!=0 && b!=0)
+        {
+            mostrar(a,b);
+        }else
+        {
+            printf("Ingrese al menos un numero para calcular \n");
+        }
 		break;
 
 		case 4:
-        restar(a,b);
-		break;
-
-		case 5:
-        multiplicar(a,b);
-		break;
-
-		case 6:
+         if (a!=0 && b!=0)
+        {
+            sumar(a,b);
+            restar(a,b);
+            multiplicar(a,b);
         if ((a!=0) & (b!=0))
             {
              dividir(a,b);
             }else (printf("Es imposible dividir por 0\n "));
 
+        factorial(a,b);
+        }else
+        {
+            printf("Ingrese al menos un numero para calcular \n");
+        }
+
 		break;
 
-		case 7:
-        factorial(a,b);
-        break;
-
-        case 8:
+        case 5:
         printf("El programa finalizo ");
         break;
 	}
-	}while(opciones!=8);
+	}while(opciones!=5);
 	return 0;
 }
-
-
-//void sumar(int a, int b)
-//{
-
-//printf("El resultado es: %d \n" , a + b);
-
-//}
-
-//void restar(int a, int b)
-//{
-
-//printf("El resultado es: %d \n" , a - b);
-
-//}
-
-
-//void multiplicar(int a, int b)
-//{
-
-//printf("El resultado es: %f \n" , a * b);
-
-//}
-
-
-//void dividir(int a, int b)
-//{
-
-//printf("El resultado es: %f \n" , a / b);
-
-//}
-
-
