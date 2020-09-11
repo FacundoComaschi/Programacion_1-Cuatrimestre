@@ -24,7 +24,7 @@ int main()
 	switch (opciones)
 	{
 		case 1:
-        printf("Ingrese primer numero: \n",a);
+        printf("Ingrese primer numero: \n");
         scanf("%f",&a);
         break;
 

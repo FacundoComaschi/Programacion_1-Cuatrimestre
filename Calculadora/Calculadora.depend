@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1599763205 source:d:\facultad\programacion\cursada\tp_laboratorio_1\calculadora\funciones.c
+1599840234 source:d:\facultad\programacion\cursada\tp_laboratorio_1\calculadora\funciones.c
 	<stdio.h>
 	"funciones.h"
 
-1599763205 d:\facultad\programacion\cursada\tp_laboratorio_1\calculadora\funciones.h
+1599840235 d:\facultad\programacion\cursada\tp_laboratorio_1\calculadora\funciones.h
 	<stdio.h>
 
-1599684100 source:d:\facultad\programacion\cursada\tp_laboratorio_1\calculadora\main.c
+1599859977 source:d:\facultad\programacion\cursada\tp_laboratorio_1\calculadora\main.c
 	<stdio.h>
 	"funciones.h"
 	<stdlib.h>
