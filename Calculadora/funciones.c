@@ -10,49 +10,48 @@ void mostrar (float x, float y)
     printf("Calcular la factorizacion de %.1f y de %.1f \n",x,y);
 }
 
-void sumar(float a, float b)
+float sumar(float a, float b)
 {
-
-printf("El resultado de la suma de %.1f + %.1f es : %.1f \n" ,a,b, a + b);
-
+float r;
+r=a+b;
+printf("El resultado de la suma de %.1f + %.1f es : %.1f \n" ,a,b, r);
+return 0;
 }
 
-void restar(float a, float b)
+float restar(float a, float b)
 {
-
-printf("El resultado de la resta de %.1f - %.1f es : %.1f \n" ,a,b, a - b);
-
+float r;
+r=a-b;
+printf("El resultado de la resta de %.1f - %.1f es : %.1f \n" ,a,b, r);
+return 0;
 }
 
-void multiplicar(float a, float b)
+float multiplicar(float a, float b)
 {
-
-printf("El resultado de la multiplicacion de %.2f * %.2f es : %.2f \n" ,a,b, a * b);
-
+float r;
+r=a*b;
+printf("El resultado de la multiplicacion de %.2f * %.2f es : %.2f \n" ,a,b, r);
+return 0;
 }
 
-void dividir(float a, float b)
+float dividir(float a, float b)
 {
-
-printf("El resultado de la division de %.2f / %.2f es : %.2f \n" ,a,b, a / b);
-
+float r;
+r=a/b;
+printf("El resultado de la division de %.2f / %.2f es : %.2f \n" ,a,b, r);
+return 0;
 }
 
-void factorial(int a, int b)
+int factorial(int x)
 {
-    int numeroFactorialA;
-    numeroFactorialA=1;
-    int numeroFactorialB;
-    numeroFactorialB=1;
-   for(a; a>0; a--)
+    int numeroFactorialx;
+    numeroFactorialx=1;
+
+   for(int i=x; i>0; i--)
    {
-       numeroFactorialA=numeroFactorialA*a;
+       numeroFactorialx=i*numeroFactorialx;
    }
-    printf("Factorial de numero %d es: %d\n",a,numeroFactorialA);
+    printf("Factorial de numero %d es: %d\n",x,numeroFactorialx);
 
-    for(b; b>0; b--)
-   {
-       numeroFactorialB=numeroFactorialB*b;
-   }
-    printf("Factorial de numero %d es: %d\n",b,numeroFactorialB);
+return 0;
 }

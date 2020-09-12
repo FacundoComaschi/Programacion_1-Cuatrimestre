@@ -7,6 +7,7 @@ int main()
     float a;
     float b;
 
+
 	 do{
 
         printf("-----------------------------------------\n");
@@ -34,31 +35,23 @@ int main()
         break;
 
 		case 3:
-        if (a!=0 && b!=0)
-        {
             mostrar(a,b);
-        }else
-        {
-            printf("Ingrese al menos un numero para calcular \n");
-        }
 		break;
 
 		case 4:
-         if (a!=0 && b!=0)
-        {
             sumar(a,b);
             restar(a,b);
             multiplicar(a,b);
-        if ((a!=0) & (b!=0))
+            if(b!=0)
             {
-             dividir(a,b);
-            }else (printf("Es imposible dividir por 0\n "));
+              dividir(a,b);
+            }else(printf("Ingrese dividendo mayor a 0 \n"));
 
-        factorial(a,b);
-        }else
-        {
-            printf("Ingrese al menos un numero para calcular \n");
-        }
+            if(a>=0 && b>=0)
+            {
+               factorial(a);
+               factorial(b);
+            }else(printf("No se puede realizar el factorial de un numero negativo \n"));
 
 		break;
 
